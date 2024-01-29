@@ -3,6 +3,7 @@
 <%= render @person %>
 
 <div>
+  <%= link_to "Add new plant", new_plant_path %>
   <%= link_to "Edit this person", edit_person_path(@person) %> |
   <%= link_to "Back to people", people_path %>
 
