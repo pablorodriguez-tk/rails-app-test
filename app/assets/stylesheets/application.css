@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+header > nav {
+  width: 50%;
+  float: right;
+  display: block;
+}
+
+header > h1 {
+  width: 50%;
+  float: left;
+  display: block;
+}
+
+header > nav > ul {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+header > nav > ul > li {
+  display: block;
+  float: left;
+  margin: 1.3em 1em;
+  padding: 0;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
