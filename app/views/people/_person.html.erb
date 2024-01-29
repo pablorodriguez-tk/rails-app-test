@@ -15,7 +15,7 @@
     <ul> 
       <% person.plants.each do |plant| %>
         <li>
-          <%= plant.name %>
+          <%= link_to plant.name, plant_path(plant) %>
         </li>
       <% end %> 
     </ul>
